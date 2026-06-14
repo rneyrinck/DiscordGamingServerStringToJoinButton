@@ -8,8 +8,7 @@ load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 BASE_URL = os.getenv(
-    "BASE_URL",
-    "http://localhost:5000"
+    "BASE_URL"
 )
 intents = discord.Intents.default()
 intents.message_content = True
