@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+ven/
+venv/
+env/
+
+# Secrets
+.env
+
+# IDE
+.vscode/
+.idea/
