@@ -2,12 +2,13 @@ from flask import Flask, request
 import urllib.parse
 import socket
 import a2s
+import os
 
 app = Flask(__name__)
 def get_server_info(server):
 
     try:
-        host, port = server.split(":")
+        host, port = server.rsplit(":", 1)
         address = (host, int(port))
 
         info = a2s.info(address)
@@ -20,7 +21,8 @@ def get_server_info(server):
             "max_players": info.max_players
         }
 
-    except Exception:
+    except Exception as e:
+        print(f"Query failed: {e}")
         return None
 
 @app.route("/<path:server>")
@@ -34,7 +36,7 @@ def connect(server):
 
     # split host and port
     try:
-        host, port = server.split(":")
+        host, port = server.rsplit(":", 1)
     except ValueError:
         return "Invalid server format. Expected host:port"
 
@@ -89,6 +91,9 @@ def connect(server):
     </html>
     """
 
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -96,4 +101,7 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
+    )

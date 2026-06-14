@@ -7,7 +7,10 @@ import socket
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-
+BASE_URL = os.getenv(
+    "BASE_URL",
+    "http://localhost:5000"
+)
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -50,8 +53,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # BASE_URL = "https://yourdomain.com"
-    BASE_URL = "http://localhost:5000"
 
     if message.author.bot:
         return
