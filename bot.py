@@ -62,8 +62,8 @@ async def on_message(message):
         return
 
     # Only allow messages from voice channel chats
-    if message.channel.type not in [discord.ChannelType.voice]:
-        return
+    # if message.channel.type not in [discord.ChannelType.voice]:
+    #     return
     
     server = None
     password = None
