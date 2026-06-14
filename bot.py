@@ -4,11 +4,16 @@ import os
 from dotenv import load_dotenv
 import a2s
 import socket
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 BASE_URL = os.getenv(
-    "BASE_URL"
+    "BASE_URL",
+    "http://localhost:5000"
 )
 intents = discord.Intents.default()
 intents.message_content = True
