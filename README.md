@@ -2,9 +2,58 @@
 
 A Discord bot that automatically detects Counter-Strike 2 server connect strings, queries live server information, and converts them into one-click join buttons.
 
-### Looks like this:
+#### Does what it says on the tin:
 
 ![Paste connect string in discord and bot returns connect button](./screenshots/3_BOT_RETURNS_MESSAGE.png)
+
+## Add to Your Discord Server
+
+Click the link below to add the bot to your Discord server:
+
+**Invite the Bot**
+
+https://discord.com/oauth2/authorize?client_id=1480680955701362878&scope=bot%20applications.commands&permissions=84992
+
+### Required Permissions
+
+The bot requires the following Discord permissions:
+
+* View Channels
+* Read Message History
+* Send Messages
+* Embed Links
+
+### Usage
+
+Once the bot has been added to your server, simply post any supported Counter-Strike 2 server address in a channel the bot can access. I recomend creating a channel for connect strings to keep things tidy until I update the bot to remove old connect buttons.
+
+Supported formats include:
+
+```text
+connect 121.127.41.37:26200
+```
+
+```text
+connect pathfinder.dathost.net:26142; password Refrag55536
+```
+
+```text
+121.127.41.37:26200
+```
+
+```text
+pathfinder.dathost.net:26142
+```
+
+The bot will automatically:
+
+* Detect the server
+* Query live server information
+* Display the server name, current map, and player count
+* Generate a one-click **Join Server** button
+
+No slash commands or configuration are required.
+
 
 ## Why?
 
@@ -129,15 +178,15 @@ Players: 4 / 10
 
 ![Paste connect string in discord and bot returns connect button](./screenshots/3_BOT_RETURNS_MESSAGE.png)
 
-### Clicking the button opens a redirect browser tab, click open to allow the bot to continue(check the box to avoid having to click through this in the future).
+#### Clicking the button opens a redirect browser tab, click open to allow the bot to continue(check the box to avoid having to click through this in the future).
 
 ![Paste connect string in discord and bot returns connect button](./screenshots/4_DISCORD_REDIRECT_PROMPT.png)
 
-### In the browser a steam connect message will popup, click open to allow the bot to open steam, open counterstrike, and connect to the server(check the "always allow..." to avoid having to click through this in the future).
+#### In the browser a steam connect message will popup, click open to allow the bot to continue. It will automatically open steam, open counterstrike, and connect to the server(check the "always allow..." to avoid having to click through this in the future).
 
 ![Paste connect string in discord and bot returns connect button](./screenshots/5_BROWSER_REDIRECT_PROMPT.png)
 
-### Current version of the redirect tab:
+#### Current version of the redirect tab:
 
 ![Paste connect string in discord and bot returns connect button](./screenshots/6_BROWSER_REDIRECT_PAGE.png)
 
