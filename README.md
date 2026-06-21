@@ -25,7 +25,7 @@ The bot requires the following Discord permissions:
 
 ### Usage
 
-Once the bot has been added to your server, simply post any supported Counter-Strike 2 server address in a channel the bot can access. I recomend creating a channel for connect strings to keep things tidy until I update the bot to remove old connect buttons.
+Once the bot has been added to your server, simply post any supported Counter-Strike 2 server address in a channel the bot can access. I recommend creating a channel for connect strings to keep things tidy until I update the bot to remove old connect buttons.
 
 Supported formats include:
 
