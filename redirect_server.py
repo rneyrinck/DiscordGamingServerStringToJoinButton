@@ -7,6 +7,10 @@ import os
 
 app = Flask(__name__, static_folder="static")
 
+@app.route("/health")
+def health():
+    return {"status": "ok"}, 200
+
 @app.route("/favicon.ico")
 def favicon():
     return send_from_directory(
