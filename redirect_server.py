@@ -111,6 +111,22 @@ def connect(server):
         border-radius:16px;
         box-shadow:0 10px 30px rgba(0,0,0,.35);
     }}
+    
+    .install-button {{
+        display:inline-block;
+        margin-top:18px;
+        padding:14px 26px;
+        background:#22c55e;
+        color:white;
+        text-decoration:none;
+        border-radius:10px;
+        font-weight:bold;
+        transition:.2s;
+    }}
+
+    .install-button:hover {{
+        background:#16a34a;
+    }}
 
     .profile {{
         width:80px;
@@ -152,6 +168,8 @@ def connect(server):
         color:#9ca3af;
         font-size:14px;
     }}
+    
+    
     </style>
 
     <script>
@@ -184,8 +202,8 @@ def connect(server):
     <h2>🚀 {join_count:,} servers joined with one click</h2>
     <h3>Built by Robert Neyrinck(JebusKrispy)</h3>
 
-    <p>
-    Have an idea, found a bug, or want to request a feature?
+   <p>
+    Enjoying the bot? Join the community for updates and feedback, or install it in your own Discord server.
     </p>
 
     <a
@@ -194,7 +212,17 @@ def connect(server):
     target="_blank">
     💬 Join the JebusKrispy Community
     </a>
-
+    <br><br>
+    <a
+    class="install-button"
+    href="https://discord.com/oauth2/authorize?client_id=1480680955701362878&scope=bot%20applications.commands&permissions=84992"
+    target="_blank">
+    ➕ Add CS2 Join Bot to Your Server
+    </a>
+    
+    <p style="font-size:13px;color:#9ca3af;margin-top:12px;">
+    Free • Open Source • No setup required
+    </p>
     <p style="margin-top:25px;font-size:14px;">
 ⭐ <a
     href="https://github.com/rneyrinck/DiscordGamingServerStringToJoinButton"
