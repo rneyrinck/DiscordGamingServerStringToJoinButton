@@ -2,7 +2,7 @@
 
 Automatically converts Counter-Strike 2 connect strings into one-click Join buttons.
 
-![Paste connect string in discord and bot returns connect button](./screenshots/CS2_join.gif)
+![Paste connect string in discord and bot returns connect button](./screenshots/CS2_join_vod.gif)
 
 ## 🚀 Add to Discord
 
