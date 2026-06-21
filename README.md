@@ -2,8 +2,9 @@
 
 A Discord bot that automatically detects Counter-Strike 2 server connect strings, queries live server information, and converts them into one-click join buttons.
 
-Looks like this:
-![Paste connect string in discord and bot returns connect button](DiscordGamingServerStringToJoinButton\screenshots\3_BOT_RETURNS_MESSAGE.png)
+### Looks like this:
+
+![Paste connect string in discord and bot returns connect button](./screenshots/3_BOT_RETURNS_MESSAGE.png)
 
 ## Why?
 
