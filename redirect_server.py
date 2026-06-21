@@ -1,4 +1,5 @@
 from flask import Flask, request, send_from_directory
+from database import increment_join, get_join_count
 import urllib.parse
 import socket
 import a2s
@@ -46,6 +47,8 @@ def connect(server):
     # split host and port
     try:
         host, port = server.rsplit(":", 1)
+        # collecting usage count
+        increment_join()
     except ValueError:
         return "Invalid server format. Expected host:port"
 
@@ -71,7 +74,10 @@ def connect(server):
         steam_url = f"steam://connect/{server_ip}/{password}"
     else:
         steam_url = f"steam://connect/{server_ip}"
-
+    
+    # pull total usage for display
+    join_count = get_join_count()
+    
     print(f"Launching: {steam_url}")
 
     # return HTML launcher page (browsers allow this)
@@ -171,7 +177,7 @@ def connect(server):
     <a href="https://discord.gg/5UdvRPSVg" target="_blank">
     <img class="profile" src="/static/JebusFace.png">
     </a>
-    
+    <h2>🚀 {join_count:,} servers joined with one click</h2>
     <h3>Built by Robert Neyrinck(JebusKrispy)</h3>
 
     <p>
