@@ -2,6 +2,9 @@
 
 A Discord bot that automatically detects Counter-Strike 2 server connect strings, queries live server information, and converts them into one-click join buttons.
 
+Looks like this:
+![Paste connect string in discord and bot returns connect button](DiscordGamingServerStringToJoinButton\screenshots\3_BOT_RETURNS_MESSAGE.png)
+
 ## Why?
 
 Joining custom CS2 servers is often more cumbersome than it should be.
@@ -120,15 +123,23 @@ Bot responds:
 
 Map: de_mirage
 Players: 4 / 10
-```
-
 [ Join Server ]
+```
+![Paste connect string in discord and bot returns connect button](./screenshots/3_BOT_RETURNS_MESSAGE.png)
 
-Clicking the button launches CS2 and connects to the server.
+Clicking the button opens a redirect browser tab, click open to allow the bot to continue(check the box to avoid having to click through this in the future).
+![Paste connect string in discord and bot returns connect button](./screenshots/4_DISCORD_REDIRECT_PROMPT.png)
+
+In the browser a steam connect message will popup, click open to allow the bot to open steam, open counterstrike, and connect to the server(check the "always allow..." to avoid having to click through this in the future).
+![Paste connect string in discord and bot returns connect button](./screenshots/5_BROWSER_REDIRECT_PROMPT.png)
+
+Current version of the redirect tab:
+![Paste connect string in discord and bot returns connect button](./screenshots/6_BROWSER_REDIRECT_PAGE.png)
+
 
 ---
 
-## Requirements
+## Requirements for testing this locally
 
 * Python 3.10+
 * Discord Bot Token
