@@ -125,15 +125,19 @@ Map: de_mirage
 Players: 4 / 10
 [ Join Server ]
 ```
+
 ![Paste connect string in discord and bot returns connect button](./screenshots/3_BOT_RETURNS_MESSAGE.png)
 
-Clicking the button opens a redirect browser tab, click open to allow the bot to continue(check the box to avoid having to click through this in the future).
+### Clicking the button opens a redirect browser tab, click open to allow the bot to continue(check the box to avoid having to click through this in the future).
+
 ![Paste connect string in discord and bot returns connect button](./screenshots/4_DISCORD_REDIRECT_PROMPT.png)
 
-In the browser a steam connect message will popup, click open to allow the bot to open steam, open counterstrike, and connect to the server(check the "always allow..." to avoid having to click through this in the future).
+### In the browser a steam connect message will popup, click open to allow the bot to open steam, open counterstrike, and connect to the server(check the "always allow..." to avoid having to click through this in the future).
+
 ![Paste connect string in discord and bot returns connect button](./screenshots/5_BROWSER_REDIRECT_PROMPT.png)
 
-Current version of the redirect tab:
+### Current version of the redirect tab:
+
 ![Paste connect string in discord and bot returns connect button](./screenshots/6_BROWSER_REDIRECT_PAGE.png)
 
 
