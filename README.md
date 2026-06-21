@@ -8,14 +8,6 @@ Automatically converts Counter-Strike 2 connect strings into one-click Join butt
 
 👉 **Install the bot:** https://discord.com/oauth2/authorize?client_id=1480680955701362878&scope=bot%20applications.commands&permissions=84992
 
-## Add to Your Discord Server
-
-Click the link below to add the bot to your Discord server:
-
-**Invite the Bot**
-
-https://discord.com/oauth2/authorize?client_id=1480680955701362878&scope=bot%20applications.commands&permissions=84992
-
 ### Required Permissions
 
 The bot requires the following Discord permissions:
